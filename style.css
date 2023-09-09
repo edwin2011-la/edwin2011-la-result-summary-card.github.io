@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  /*border: 2px dotted red;*/
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  place-content: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  grid-template-rows: 430px;
+}
+
+.container_left-side {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(
+    180deg,
+    rgb(120, 87, 255),
+    rgb(46, 43, 233)
+  );
+  border-radius: 25px;
+}
+
+.container_right-side {
+  /*border: 2px solid blue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 4px 3px 10px -1px gray;
+}
+
+.container_left-side h3{
+  position: relative;
+  bottom: 4px;
+  color:  hsl(241, 100%, 89%);
+}
+
+.average {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(78, 33, 202),
+    rgba(36, 33, 202, 0)
+  );
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.average h4{
+  color: hsla(241, 100%, 89%, 0.887);
+}
+
+.praises {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-container_text {
+  padding-top: 10px;
+  max-width: 90%;
+  line-height: 20px;
+}
+
+.middle {
+  position: relative;
+  left: 7%;
+}
+
+.last {
+  position: relative;
+  left: 30%;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+#tests {
+  /* position: relative; */
+  /*border: 2px solid red;*/
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px; 
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.container_tests {
+  position: relative;
+  bottom: 5px;
+}
+
+.container_right-side h3 {
+  position: relative;
+  bottom: 23px;
+  right: 78px;
+}
+
+.container_right-side img {
+  position: relative;
+  top: 3px;
+}
+
+img{
+  position: relative;
+  top: 4px;
+  margin-right: 3px;
+}
+
+.container_tests .one{
+  background-color: rgb(255, 87, 87,0.07);
+}
+
+.container_tests .two{
+  background-color: rgb(255, 176, 31 ,0.07);
+}
+
+.container_tests .three{
+  background-color: rgb(0, 189, 145,0.07);
+}
+
+.container_tests .four {
+  background-color: rgb(17, 37, 212,0.07);
+}
+
+#un{
+  color: hsl(0, 100%, 67%);
+}
+
+#deux{
+  color:  hsl(39, 100%, 56%); 
+}
+
+#trois{
+  color: hsl(166, 100%, 37%);
+}
+
+#quatre{
+  color:  hsl(234, 85%, 45%);
+}
+
+.three .fraction,
+.four .fraction{
+  position: relative;
+  left: 4.5px;
+}
+
+b{
+  color: black;
+}
+
+.container_tests p{
+  position: relative;
+  top: 2.5px;
+  margin-left: 45px;
+  color: hsl(241, 100%, 89%);
+
+  /* bottom: 18px;
+  left: 150px; */
+}
+
+.button{
+  padding: 14px;
+  padding-left: 78px;
+  padding-right: 78px;
+  border-radius: 50px;
+  font-size: 15px;
+  border: none;
+  color: #ffffff;
+  position: relative;
+  top: 20px;
+  background-color: hsl(224, 30%, 27%);
+  transition: ease 1.2s;
+}
+
+.button:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+@media(width <= 675px){
+  
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 350px 420px;
+    grid-template-columns: 400px ;
+    place-content: center;
+  }
+
+  .container_left-side{
+    position: relative;
+    left: 0px;
+    top: 62px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+
+  .average{
+    margin: 15px;
+    width: 45%;
+  }
+
+  .bottom-container_text{
+    max-width: 80%;
+    position: relative;
+    left: 10px;
+  }
+
+  .middle {
+    position: relative;
+    left: 0%;
+  }
+  
+  .last {
+    position: relative;
+    left: 0%;
+  }
+
+  .container_right-side{
+    box-shadow: none;
+    background-color: #ffffff;
+  }
+
+  .container_right-side h3 {
+    position: relative;
+    top: 30px;
+    right: 120px;
+  }
+
+  #tests{
+    position: relative;
+    top: 40px;
+    right: 10px;
+    margin: 10px;
+  }
+
+  .container_tests p{
+    margin-left: 120px;
+  }
+
+  .button{
+    top: 50px;
+    right: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
